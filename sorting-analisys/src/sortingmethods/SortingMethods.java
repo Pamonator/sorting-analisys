@@ -38,6 +38,44 @@ public class SortingMethods {
 
     }
 
+    public static void insertionSort(int[] vector, int n) {
+
+        int temp;
+
+        for (int i = 1; i < n; i++) {
+
+            temp = vector[i];
+
+            for (int j = i - 1; j >= 0 && temp < vector[j]; j--) {
+
+                vector[j + 1] = vector[j];
+                vector[j] = temp;
+
+            }
+
+        }
+
+    }
+    
+    public static void mergeSort(int[] vector, int n) {
+    
+        
+    
+    }
+    
+    public static void heapSort(int[] vector, int n) {
+    
+    }
+    
+    public static void shellSort(int[] vector, int n) {
+    
+    }
+    
+    public static void quickSort(int[] vector, int n) {
+    
+    }
+    
+
     private static void swap(int[] vector, int i, int j) {
 
         int aux = vector[i];
