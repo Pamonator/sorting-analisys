@@ -15,7 +15,7 @@ public class MainRandom {
 
     public static void main(String[] args) {
 
-        int n = 10000;
+        int n = 25000;
         int[] vector, vClone1, vClone2, vClone3, vClone4, vClone5, vClone6;
         long begin, end;
 
@@ -23,7 +23,7 @@ public class MainRandom {
 
         for (int i = 0; i < n; i++) {
 
-            vector[i] = (int) (Math.random() * n) + 1;
+            vector[i] = (int) (Math.random() * n * n * 0.1) + 1;
             //System.out.println(vector[i]);
 
         }
@@ -70,7 +70,7 @@ public class MainRandom {
         end = System.currentTimeMillis();
 
         System.out.println("Tempo quick: " + (end - begin));
-//
+
 //        for (int i = 0; i < n; i++) {
 //
 //            System.out.println(vClone4[i]);
